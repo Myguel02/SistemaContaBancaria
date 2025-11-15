@@ -16,14 +16,14 @@ public class ContaPoupanca extends Conta implements OperacoesBancarias {
     public void transferir(Conta destino, double valor) throws SaldoInsuficienteException {
         this.sacar(valor);
         destino.depositar(valor);
-        System.out.println("Transferência realizada sem taxa.");
+        System.out.println("Transferencia realizada sem taxa.");
     }
 
     @Override
     public void imprimirExtrato() {
         System.out.println("\n=== EXTRATO CONTA POUPANÇA ===");
         System.out.println("Titular: " + getTitular());
-        System.out.println("Número: " + getNumero());
+        System.out.println("Numero: " + getNumero());
         System.out.println("Saldo: " + getSaldo());
         System.out.println("==============================\n");
     }

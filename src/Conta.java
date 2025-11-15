@@ -11,7 +11,7 @@ public abstract class Conta {
 
     public void depositar(double valor) {
         if (valor <= 0) {
-            System.out.println("Valor inválido para depósito.");
+            System.out.println("Valor invalido para deposito.");
             return;
         }
         this.saldo += valor;

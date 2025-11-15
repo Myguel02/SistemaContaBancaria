@@ -8,7 +8,7 @@ public class ContaCorrente extends Conta implements OperacoesBancarias {
 
     @Override
     public void atualizarSaldo() {
-        System.out.println("Conta Corrente não possui rendimento mensal.");
+        System.out.println("Conta Corrente nao possui rendimento mensal.");
     }
 
     @Override
@@ -16,7 +16,7 @@ public class ContaCorrente extends Conta implements OperacoesBancarias {
         double valorComTaxa = valor + (valor * TAXA_OPERACAO);
 
         if (valorComTaxa > getSaldo()) {
-            throw new SaldoInsuficienteException("Saldo insuficiente para transferência com taxa.");
+            throw new SaldoInsuficienteException("Saldo insuficiente para transferencia com taxa.");
         }
 
         this.sacar(valorComTaxa);
